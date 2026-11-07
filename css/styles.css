@@ -14,7 +14,7 @@
    -------------------------------------------------------------------------- */
 @font-face {
     font-family: "Unbounded";
-    src: url("fonts/Unbounded-Bold.ttf") format("truetype");
+    src: url("../fonts/Unbounded-Regular.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -40,7 +40,7 @@ body {
 
 header img {
     display: block;
-    margin: 75px auto 0 auto;
+    margin: 75px 0 0 360px;
 }
 
 /* --------------------------------------------------------------------------
@@ -75,6 +75,7 @@ a {
     background-color: #9747FF;
     width: 340px;
     height: 66px;
+    display: block;
     text-align: center;
     line-height: 66px;
     border-radius: 36px;
