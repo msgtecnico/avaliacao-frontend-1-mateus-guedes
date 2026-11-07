@@ -20,17 +20,98 @@
 
 <body>
     <header>
-        <a href="index.html">
+        <!--
+        <a href="index.html" >  -->
             <img src="img/logo-tecboard-branco.png" alt="Logo Tecboard na cor branca">
-        </a>
+        <!--</a>-->
     </header>
 
     <main>
         <section id="cadastro">
             <h2>Solicite seu Acesso e Configure sua Aplicação</h2>
+            
 
             <form action="#" method="post">
                 <!-- Construa os blocos de fieldset do formulário aqui -->
+                 <fieldset>
+
+                    <legend>Dados do Reponsável</legend>
+                    
+                    <label for="name">Nome:</label>
+                    <input id= "name" type="text" name="userName" required>
+                    <br>
+
+                    <label for="age">Idade:</label>
+                    <input id="age" type="number" name="userAge" required min="12" max="100">
+                    <br>
+
+                    <label for="birthDate">Data de Solicitação</label>
+                    <input id="birthDate" type="date" name="userBirthDate">
+                    <br>    
+
+                    <label for="email">Email corporativo</label>
+                    <input id="email" type="email" name="userEmail" required>
+                    <br>
+
+                    <label for="phone">Telefone de plantão</label>
+                    <input id="phone" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="12123456789">
+                    <br>
+
+                    <label for="image">Upload de foto</label>
+                    <input id="image" type="file" accept="image/*" name="userImage">
+                    <br>
+                </fieldset> 
+                
+                <br>
+
+                <fieldset>
+                    <legend>Perfil da Aplicação e Preferências</legend>
+                    <label for="appName">Parte da infraestrutura:</label>
+                    <br>
+
+                    <input id="pequeno" type="radio" name="userGender" value="pequeno">
+                    <label for="pequeno">pequeno</label>
+                    <br>
+                    
+                    <input id="medio" type="radio" name="userGender" value="medio">
+                    <label for="medio">Médio</label>
+                    <br>
+
+                    <input id="corporativo" type="radio" name="userGender" value="corporativo">
+                    <label for="corporativo">Corporativo</label>
+                    <br>
+                 
+
+                </fieldset>
+                
+                <br>
+                <fieldset>
+
+                    <legend>Termos e Condições</legend>
+                    
+
+
+                    <div class="form-group">
+                        <label for="observacoes_tecnicas">Observações Técnicas:</label>
+                        <br>
+                        <textarea
+                            id="observacoes_tecnicas"
+                            name="observacoes_tecnicas" 
+                            rows="5" 
+                            cols="50"
+                            placeholder="Introduza os detalhes técnicos da configuração..."
+                            style="resize: vertical; width: 100%; max-width: 600px; font-family: sans-serif;"
+                        ></textarea>
+                    </div> 
+                    
+                    <input id="terms" type="checkbox" name="terms" required>            
+                    <label for="terms">Aceito os termos</label> 
+
+                </fieldset>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Botão de Limpeza</button>
+
+
             </form>
         </section>
     </main>
